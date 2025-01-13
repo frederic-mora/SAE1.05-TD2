@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starter Start-Up SAé1.05</title>
+    <link rel="stylesheet" href="./css/base.css" />
+  </head>
+  <body>
+   <div id="hero-samples"></div>
+   <div id="nav-samples"></div>
+
+   <script type="module">
+    import {dataHero} from './data/dataHero.js';
+    import {Hero} from './component/Hero/script.js';
+    Hero.render('#hero-samples', dataHero);
+
+    import {dataNavigation} from './data/dataNavigation.js';
+    import {Navigation} from './component/Navigation/script.js';
+    Navigation.render('#nav-samples', dataNavigation);
+
+   </script>
+   
+    
+  </body>
+</html>

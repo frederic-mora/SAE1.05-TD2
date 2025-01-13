@@ -1,0 +1,30 @@
+.nav {
+  --_bg-nav: var(--bg-nav, var(--clr-white));
+  --_fg-nav: var(--fg-nav, var(--clr-dark));
+  padding: 1em 2em;
+  margin-block: 1rem;
+  font-family: var(--ff-sans);
+  color: var(--_fg-nav);
+  background-color: var(--_bg-nav);
+  border: solid 1px var(--_fg-nav);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav__link:hover {
+  text-decoration: underline;
+}

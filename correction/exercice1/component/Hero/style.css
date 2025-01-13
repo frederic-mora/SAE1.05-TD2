@@ -1,0 +1,35 @@
+.hero {
+  /* Variable css 'privée' */
+  --_bg-hero: var(--bg-hero, url("https://picsum.photos/800/600"));
+  margin: 2rem auto;
+  padding: 10rem 0;
+  font-family: var(--ff-sans);
+  color: var(--clr-light);
+  text-align: center;
+  background-color: var(--clr-dark);
+  background-image: linear-gradient(
+      90deg,
+      rgba(19, 67, 77, 0.7) 0%,
+      rgba(86, 22, 91, 0.7) 100%
+    ),
+    var(--_bg-hero);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero__title {
+  max-width: 12ch;
+  margin: 0 auto;
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: 2.6px;
+}
+
+.hero__desc {
+  max-width: 35ch;
+  margin: 2rem auto;
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
